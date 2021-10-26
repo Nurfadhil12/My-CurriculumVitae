@@ -6,12 +6,9 @@ const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Create & inspire. It's Lama</h1>
+        <h1 className="pl-title">My Portofolio</h1>
         <p className="pl-desc">
-          Lama is a creative portfolio that your work has been waiting for.
-          Beautiful homes, stunning portfolio styles & a whole lot more awaits
-          inside.
-        </p>
+        this is my work in making a website, I made it using bootstrap framework, reactjs and angularjs        </p>
       </div>
       <div className="pl-list">
         {products.map((item) => (

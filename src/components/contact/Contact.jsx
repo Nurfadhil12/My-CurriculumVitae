@@ -16,10 +16,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_rrvnzco",
-        "template_3v5nih4",
+        "service_15pomld",
+        "template_w6i568j",
         formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
+        "user_EgX73oC9ulSJAotTdhwO2"
       )
       .then(
         (result) => {
@@ -41,15 +41,15 @@ const Contact = () => {
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
-              +1 1234 556 75
+              081226045563
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
-              contact@lama.dev
+              nurfadhil138@gmail.com
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
-              245 King Street, Touterie Victoria 8520 Australia
+              Gg. Tambura II, Wanasari, Sidanegara, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah 53212
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ const Contact = () => {
             freelancing if the right project comes along. me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" required placeholder="Name" name="user_name" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" required placeholder="Subject" name="user_subject" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" required placeholder="Email" name="user_email" />
+            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" required placeholder="Message" name="message" />
             <button>Submit</button>
             {done && "Thank you..."}
           </form>
