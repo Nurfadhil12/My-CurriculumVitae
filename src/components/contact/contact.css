@@ -55,31 +55,54 @@ form {
 }
 
 input {
-  width: 50%;
-  height: 50px;
-  border: none;
-  border-bottom: 1px solid black;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
+  display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out
 }
 
 textarea {
-  width: 100%;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
+  display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out
 }
 
-button {
+.Btn {
   border: none;
   padding: 15px;
   background-color: #59b256;
   color: white;
   font-weight: 500;
   cursor: pointer;
+  border-radius: 5px;
 }
-
+.Btn:hover {
+  color: #fff;
+  background-color: #59b256;
+  background-color: #59b256;
+  border-radius: 5px;
+}
 @media screen and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;
@@ -105,12 +128,12 @@ button {
     flex-wrap: wrap;
   }
 
-  input {
+  /* input {
     width: 35%;
     height: 40px;
     margin: 10px;
     margin-left: 0;
-  }
+  } */
 
   button {
     margin-top: 10px;

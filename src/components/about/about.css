@@ -17,16 +17,16 @@
   flex: 1;
 }
 
-.a-card.bg {
+/* .a-card.bg {
   position: absolute;
   top: 50px;
   left: 80px;
   background-color: #333;
-}
+} */
 
 .a-card {
   width: 60%;
-  height: 70vh;
+  /* height: 70vh; */
   border-radius: 30px;
   position: relative;
   overflow: hidden;

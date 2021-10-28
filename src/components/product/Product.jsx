@@ -6,11 +6,12 @@ const Product = ({img,link}) => {
       <div className="p-browser">
         <div className="p-circle">Coming Soon</div>
       </div>
-      <a href={link} target="_blank" rel="noreferrer">
+      {/* <a href={link} target="_blank" rel="noreferrer">
         <img src={img} alt="" className="p-img" />
-      </a>
+      </a> */}
     </div>
   );
 };
 
 export default Product;
+ 
