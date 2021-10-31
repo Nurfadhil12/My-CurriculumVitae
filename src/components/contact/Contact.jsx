@@ -28,7 +28,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true)
+          setDone(true);
+          window.location.reload();
         },
         (error) => {
           console.log(error.text);
@@ -63,11 +64,11 @@ const Contact = () => {
             freelancing if the right project comes along. me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit} style={{display:"contents"}} >
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" required placeholder="Name" name="user_name" className="mb-3"/>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" required placeholder="Subject" name="user_subject" className="mb-3"/>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" required placeholder="Email" name="user_email" className="mb-3"/>
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" required placeholder="Message" name="message" className="mb-3"/>
-            <button className="Btn" style={{width: "100%"}} >Submit</button>
+            <input style={{backgroundColor: darkMode && "#333",color: darkMode && "#fff"}} type="text" required placeholder="Name" name="user_name" className="mb-3"/>
+            <input style={{backgroundColor: darkMode && "#333",color: darkMode && "#fff"}} type="text" required placeholder="Subject" name="user_subject" className="mb-3"/>
+            <input style={{backgroundColor: darkMode && "#333",color: darkMode && "#fff"}} type="text" required placeholder="Email" name="user_email" className="mb-3"/>
+            <textarea style={{backgroundColor: darkMode && "#333",color: darkMode && "#fff"}} rows="5" required placeholder="Message" name="message" className="mb-3"/>
+            <button className="Btn mb-3" style={{width: "100%"}} >Submit</button>
             {done && "Thank you..."}
           </form>
         </div>
